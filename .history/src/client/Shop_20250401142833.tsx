@@ -1,4 +1,6 @@
 import { useList } from "@refinedev/core";
+import { log } from "console";
+import React from "react";
 const Shop = () => {
     const { data, isLoading } = useList({ resource: "products" });
     if (isLoading) return <div>Loading...</div>;

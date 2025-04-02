@@ -82,11 +82,11 @@ function App() {
                                     </Route>
                                     <Route
                                         element={
-                                            // <Authenticated key="authenticated-inner" fallback={<CatchAllNavigate to="/login" />}>
-                                            <ThemedLayoutV2 Header={Header} Sider={(props) => <ThemedSiderV2 {...props} fixed />}>
-                                                <Outlet />
-                                            </ThemedLayoutV2>
-                                            // </Authenticated>
+                                            <Authenticated key="authenticated-inner" fallback={<CatchAllNavigate to="/login" />}>
+                                                <ThemedLayoutV2 Header={Header} Sider={(props) => <ThemedSiderV2 {...props} fixed />}>
+                                                    <Outlet />
+                                                </ThemedLayoutV2>
+                                            </Authenticated>
                                         }
                                     >
                                         <Route index element={<NavigateToResource resource="blog_posts" />} />

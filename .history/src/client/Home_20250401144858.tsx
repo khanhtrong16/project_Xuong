@@ -54,6 +54,27 @@ const Home = () => {
                                 ))}
                             </Link>
                         </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="product-card">
+                                <img src="https://picsum.photos/250/250?random=5" alt="Product 2" />
+                                <h6>Leviosa</h6>
+                                <p>Rp 1.800.000</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="product-card">
+                                <img src="https://picsum.photos/250/250?random=6" alt="Product 3" />
+                                <h6>Lolito</h6>
+                                <p>Rp 3.200.000</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="product-card">
+                                <img src="https://picsum.photos/250/250?random=7" alt="Product 4" />
+                                <h6>Respira</h6>
+                                <p>Rp 2.900.000</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="text-center">
                         <Link to={"/productdetail"}>

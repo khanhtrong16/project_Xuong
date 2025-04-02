@@ -46,13 +46,43 @@ const Home = () => {
                         <div className="col-md-3 mb-4">
                             <Link to={"/productdetail"} className="text-decoration-none text-black">
                                 {data?.data.map((item: any) => (
-                                    <div className="product-card" key={item.id}>
-                                        <img src={item.thumbnail} />
-                                        <h6>{item.name}</h6>
-                                        <p>Rp {item.price}</p>
+                                    // <div className="col-md-3 mb-4" key={item.id}>
+                                    //     <div className="product-card">
+                                    //         <img src={item.thumbnail} />
+                                    //         <span className="discount">-20%</span>
+                                    //         <button className="add-to-cart">Add to Cart</button>
+                                    //         <h6>{item.name}</h6>
+                                    //         <p>Rp {item.price}</p>
+                                    //     </div>
+                                    // </div>
+                                    <div className="product-card">
+                                        <img src={item.thumbnail} alt="Product 1" />
+                                        <h6>Syltherine</h6>
+                                        <p>Rp 2.500.000</p>
                                     </div>
                                 ))}
                             </Link>
+                        </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="product-card">
+                                <img src="https://picsum.photos/250/250?random=5" alt="Product 2" />
+                                <h6>Leviosa</h6>
+                                <p>Rp 1.800.000</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="product-card">
+                                <img src="https://picsum.photos/250/250?random=6" alt="Product 3" />
+                                <h6>Lolito</h6>
+                                <p>Rp 3.200.000</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 mb-4">
+                            <div className="product-card">
+                                <img src="https://picsum.photos/250/250?random=7" alt="Product 4" />
+                                <h6>Respira</h6>
+                                <p>Rp 2.900.000</p>
+                            </div>
                         </div>
                     </div>
                     <div className="text-center">
