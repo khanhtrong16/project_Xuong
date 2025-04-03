@@ -8,7 +8,7 @@ import {
 import type { BaseRecord } from "@refinedev/core";
 import { Space, Table } from "antd";
 
-export const CategoryList = () => {
+export const ProductList = () => {
   const { tableProps } = useTable({
     syncWithLocation: true,
   });
